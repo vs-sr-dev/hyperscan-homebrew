@@ -1,5 +1,7 @@
 # GCC `score-elf` — critical code-generation bugs and workarounds
 
+> **Archived and obsolete.** Every bug below was found with an out-of-tree forward-port of the S+core backend onto GCC 14.3.0 ([LiraNuna/hyperscan-emulator](https://github.com/LiraNuna/hyperscan-emulator), April 2026), a patch that has received fixes since. They are not bugs of the S+Core architecture, nor of Sunplus' own toolchain. Do not cite this list; see the [README](../README.md).
+
 The HyperScan CPU is a Sunplus **S+Core 7** ("score7"). The only freely available C toolchain for it is GCC's `score-elf` backend. That backend is **unmaintained** and emits incorrect code in a number of situations. The bugs below were isolated empirically while developing homebrew against the MAME driver; each affects real, ordinary C code, and several manifest as symptoms so far removed from their cause that they are nearly impossible to diagnose without prior knowledge.
 
 None of these are reported in the GCC bug tracker at this level of detail. They are documented here so that anyone using `score-elf` for any S+Core 7 target — not just the HyperScan — can recognise the symptom and apply the fix.

@@ -1,5 +1,7 @@
 # hyperscan-homebrew (archived)
 
+> **About the "compiler bugs":** they were found with a GCC 14.3.0 that had the long-removed S+core backend patched back in out of tree (the toolchain script from [LiraNuna/hyperscan-emulator](https://github.com/LiraNuna/hyperscan-emulator), as of April 2026). They describe that patch at that time, not the S+Core CPU and not any maintained toolchain, and that patch has received fixes since. If someone sent you here about S+Core compiler bugs, this is not the place to look.
+
 > **Obsolete, and archived.** This was one of the first repositories on this account, published in June 2026. It stays online, read-only, as a record of where the work started. It is not a reference for HyperScan or S+Core development: please don't cite it as one.
 
 ## Why it is obsolete
